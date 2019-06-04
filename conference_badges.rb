@@ -2,24 +2,24 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(person)
-  person.map do |person|
-  "Hello, name is #{person}."
+def batch_badge_creator(attendees)
+  attendees.map do |attendees|
+  "Hello, name is #{attendees}."
 end
 end
 
-def assign_rooms(person)
-  person.each_with_index.map do |person, index|
-  "Hello #{person}! You'll be assigned to room #{index+1}!"
+def assign_rooms(attendees)
+  attendees.each_with_index.map do |attendees, index|
+  "Hello #{attendees}! You'll be assigned to room #{index+1}!"
 end
 end  
 
-def printer(person)
-  batch_badge_creator(person).each do |badge|
+def printer(attendees)
+  batch_badge_creator(attendees).each do |badge|
     puts badge
   end
 
-  assign_rooms(person).each do |room|
+  assign_rooms(attendees).each do |room|
     puts room
   end
 end
