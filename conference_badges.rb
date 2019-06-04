@@ -12,4 +12,4 @@ def assign_rooms(person)
   "Hello #{person}! You'll be assigned to room #{index+1}!"
 end
 
-def printer
+def printer()
